@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node mqtt.js"
+    "start": "node mqtt.js"
   },
   "author": "",
   "license": "ISC",
