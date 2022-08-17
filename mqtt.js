@@ -19,17 +19,17 @@ app.post("/",(req,res)=>{
 })
 
 
-client.on('connect', function() {
-  publish(topik,"0")
-});
+// client.on('connect', function() {
+//   publish(topik,"0")
+// });
 
-const publish=(topic,message)=>{
+// const publish=(topic,message)=>{
    
-    if(client.connected){
-        console.log(`publish to ${topic} : `,message)    
-        client.publish(topic,message)
-    }
-}
+//     if(client.connected){
+//         console.log(`publish to ${topic} : `,message)    
+//         client.publish(topic,message)
+//     }
+// }
 
 app.listen(port,()=>{
     console.log(`app started on ${port}`)
