@@ -31,6 +31,4 @@ app.post("/",(req,res)=>{
 //     }
 // }
 
-app.listen(port,()=>{
-    console.log(`app started on ${port}`)
-})
+app.listen(process.env.PORT || 5000)
